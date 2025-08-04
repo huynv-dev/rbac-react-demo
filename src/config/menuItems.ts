@@ -3,7 +3,7 @@ import { Permission } from '../types/permissions';
 export interface MenuItem {
   label: string;
   path: string;
-  permission?: Permission; // optional, nếu không có nghĩa là public
+  permission?: Permission;
 }
 
 export const menuItems: MenuItem[] = [
