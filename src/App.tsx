@@ -3,6 +3,7 @@ import { setUser, setPermissions } from './store/authSlice';
 import { ROLES } from './types/roles';
 import { PermissionGate } from './components/PermissionGate';
 import { useEffect } from 'react';
+import { Menu } from './components/Menu';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ function App() {
   return (
     <div>
       <h1>RBAC Demo</h1>
-
+      <Menu />
       <PermissionGate permission="post:create">
         <button>Create Post</button>
       </PermissionGate>
